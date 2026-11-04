@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Submit Complaint | Hostel Care</title><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script></head>
+<body class="complaint-page"><header class="complaint-nav"><div class="logo">🏠 HOSTEL CARE</div><nav><a href="student-dashboard.html">← Back to Dashboard</a><a href="#" data-logout>Logout</a></nav></header>
+<main class="complaint-container"><div class="complaint-heading"><h1>Submit a Complaint</h1><p>Tell us about your hostel problem. We'll work to resolve it.</p></div>
+<form id="complaintForm"><div class="form-grid">
+<div class="form-group"><label for="studentName">Student Name *</label><input type="text" id="studentName" name="studentName" placeholder="Enter your name" required></div>
+<div class="form-group"><label for="studentId">Student ID *</label><input type="text" id="studentId" name="studentId" placeholder="Student ID" readonly required></div>
+<div class="form-group"><label for="roomNumber">Room Number *</label><input type="text" id="roomNumber" name="roomNumber" placeholder="Example: A-205" required></div>
+<div class="form-group"><label for="category">Complaint Category *</label><select id="category" name="category" required><option value="">Select Category</option><option>Electrical Issues</option><option>Water Problems</option><option>Cleaning Issues</option><option>Furniture Damage</option><option>Internet Problems</option><option>Other</option></select></div>
+<div class="form-group"><label for="title">Complaint Title *</label><input type="text" id="title" name="title" placeholder="Enter complaint title" required></div>
+<div class="form-group"><label for="priority">Priority *</label><select id="priority" name="priority" required><option value="">Select Priority</option><option>Low</option><option>Medium</option><option>High</option><option>Urgent</option></select></div>
+<div class="form-group full-width"><label for="description">Complaint Description *</label><textarea id="description" name="description" rows="5" placeholder="Explain your problem in detail..." required></textarea></div>
+<div class="form-group full-width"><label for="photo">Upload Image (Optional)</label><input type="file" id="photo" name="photo" accept="image/*"><small>Image upload is shown in this demo but is not stored.</small></div></div>
+<div class="form-actions"><button type="reset" class="cancel-btn">Clear Form</button><button type="submit" class="submit-btn">Submit Complaint</button></div><p id="complaintMessage" role="status" aria-live="polite"></p></form></main><footer class="complaint-footer">© 2026 Hostel Care. All Rights Reserved.</footer></body></html>
